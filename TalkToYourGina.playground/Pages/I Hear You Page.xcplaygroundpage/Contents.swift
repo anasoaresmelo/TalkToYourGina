@@ -33,9 +33,10 @@ class MyViewController : UIViewController {
         self.view = view
     }
     
-    
+    // Declarations
     let iHearYouButton = UIButton()
     
+    // Buttons and functions
     override func viewDidLoad() {
         iHearYouButton.addTarget(self, action: #selector(MyViewController.touchedButton), for: .touchUpInside)
     }

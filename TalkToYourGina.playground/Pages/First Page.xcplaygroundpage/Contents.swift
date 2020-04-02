@@ -35,15 +35,16 @@ class MyViewController : UIViewController {
         
         // Text Field
         let myTextField = UITextField ( )
-        label.frame = CGRect(x: 130, y: 620, width: 2000, height: 20)
-        myTextField.text = "Qual sua dúvida?"
-        
+        myTextField.frame = CGRect(x: 150, y: 547, width: 2000, height: 40)
+        myTextField.text = "C'mon let's talk!"
+        myTextField.textColor = .lightGray
         
         // Views
         view.addSubview(backGroundImageView)
         view.addSubview(ginaImageView)
         view.addSubview(textFieldImageView)
         view.addSubview(microphoneButton)
+        view.addSubview(myTextField)
         view.addSubview(label)
         view.addSubview(button)
         
