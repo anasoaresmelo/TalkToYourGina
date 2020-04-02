@@ -33,18 +33,33 @@ class MyViewController : UIViewController {
         let textFieldImageView = UIImageView(image: textFieldImage)
         textFieldImageView.frame = CGRect(x: 50, y: 520, width: 400, height: 100)
         
+        // Text Field
+        let myTextField = UITextField ( )
+        label.frame = CGRect(x: 130, y: 620, width: 2000, height: 20)
+        myTextField.text = "Qual sua dúvida?"
+        
+        
         // Views
         view.addSubview(backGroundImageView)
         view.addSubview(ginaImageView)
         view.addSubview(textFieldImageView)
+        view.addSubview(microphoneButton)
         view.addSubview(label)
         view.addSubview(button)
+        
+        // Microphone Button
+        let microphoneButtonImage = UIImage(named: "microphone-ttyg")
+        microphoneButton.frame = CGRect(x: 70, y: 530, width: 70, height: 70)
+        microphoneButton.setImage(microphoneButtonImage, for: .normal)
         
         self.view = view
     }
     
+    // Declarations
     let button = UIButton()
+    let microphoneButton = UIButton()
     
+    // Buttons and functions
     override func viewDidLoad() {
         button.addTarget(self, action: #selector(MyViewController.touchedButton), for: .touchUpInside)
     }
