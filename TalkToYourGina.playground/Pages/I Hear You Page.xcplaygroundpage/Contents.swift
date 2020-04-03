@@ -49,6 +49,4 @@ class MyViewController : UIViewController {
 let mvc = MyViewController()
 mvc.preferredContentSize = CGSize(width: 480, height: 640)
 PlaygroundPage.current.liveView = mvc
-
-
 //: [Next](@next)

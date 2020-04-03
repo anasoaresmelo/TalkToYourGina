@@ -13,15 +13,15 @@ class MyViewController : UIViewController {
         let backgroundImageView = UIImageView(image: background)
         backgroundImageView.frame = CGRect(x: 0, y: 0, width: 480, height: 700)
         
-        // Background conversation image
-        let conversationBackground = UIImage(named: "conversation-bg-ttyg")
-        let conversationBackgroundImageView = UIImageView(image: conversationBackground)
-        conversationBackgroundImageView.frame = CGRect(x: 0, y: 300, width: 480, height: 350)
-        
         // Gina image
         let gina = UIImage(named: "Gina-ttyg")
         let ginaImageView = UIImageView(image: gina)
         ginaImageView.frame = CGRect(x: 20, y: 120, width: 440, height: 530)
+        
+        // Background conversation image
+        let conversationBackground = UIImage(named: "conversation-bg-ttyg")
+        let conversationBackgroundImageView = UIImageView(image: conversationBackground)
+        conversationBackgroundImageView.frame = CGRect(x: 0, y: 300, width: 480, height: 350)
         
         // Text Field Background
         let textFieldBackground = UIImage(named: "text-field-conversation-ttyg")
